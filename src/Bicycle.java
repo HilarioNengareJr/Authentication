@@ -4,7 +4,18 @@ public class Bicycle{
     private int cadence;
     public int gear;
 
-    //Constructor
+    //Constructors
+    public Bicycle(){
+        int sped = this.speed = 2;
+        int cad = this.cadence = 2;
+        int gea = this.gear = 1;
+    }
+
+    public Bicycle(int sped, int cad, int gea){
+        this.speed = sped;
+        this.cadence = cad;
+        this.gear = gea;
+    }
 
     // mutators
     void setSpeed(int speed){
